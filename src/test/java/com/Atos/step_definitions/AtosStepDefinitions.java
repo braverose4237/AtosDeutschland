@@ -42,7 +42,7 @@ public class AtosStepDefinitions {
     }
     @Then("check user on the Instagram WebSite")
     public void check_user_on_the_ınstagram_web_site() {
-        Assert.assertTrue(BrowserUtils.linkcheck().contains("instagram"));
+        Assert.assertTrue(BrowserUtils.linkcheck().contains("xing"));
     }
     @When("user click Xing Link")
     public void user_click_xing_link() {
