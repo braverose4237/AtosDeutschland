@@ -14,8 +14,8 @@ Feature: Default
 		Scenario:
 		    When user is on the Atos Page
 		    And user deny to Cookies
-		    And user click Instagram Link
-		    Then check user on the Instagram WebSite	
+		    And user click instagram Link
+		    Then check user on the instagram WebSite
 
 	@FNW-560
 	Scenario: Check Xing Links of Atos.net

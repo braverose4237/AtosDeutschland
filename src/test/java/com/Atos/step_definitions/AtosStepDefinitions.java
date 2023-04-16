@@ -35,12 +35,12 @@ public class AtosStepDefinitions {
 
         Assert.assertTrue(BrowserUtils.linkcheck().contains("facebook"));
     }
-    @When("user click Instagram Link")
+    @When("user click instagram Link")
     public void user_click_ınstagram_link() {
         basePage.instagram.click();
         BrowserUtils.sleep(2);
     }
-    @Then("check user on the Instagram WebSite")
+    @Then("check user on the instagram WebSite")
     public void check_user_on_the_ınstagram_web_site() {
         Assert.assertTrue(BrowserUtils.linkcheck().contains("instagram"));
     }
