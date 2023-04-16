@@ -1,6 +1,6 @@
 package com.Atos.step_definitions;
 
-import com.Atos.pages.BasePage;
+import com.Atos.pages.BasePageAtos;
 import com.Atos.utilities.BrowserUtils;
 import com.Atos.utilities.ConfigurationReader;
 import com.Atos.utilities.Driver;
@@ -9,7 +9,7 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 public class AtosStepDefinitions {
-    BasePage basePage=new BasePage();
+    BasePageAtos basePage=new BasePageAtos();
     @When("user is on the Atos Page")
     public void user_is_on_the_atos_page() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
@@ -42,7 +42,7 @@ public class AtosStepDefinitions {
     }
     @Then("check user on the Instagram WebSite")
     public void check_user_on_the_ınstagram_web_site() {
-        Assert.assertTrue(BrowserUtils.linkcheck().contains("xing"));
+        Assert.assertTrue(BrowserUtils.linkcheck().contains("instagram"));
     }
     @When("user click Xing Link")
     public void user_click_xing_link() {
@@ -51,7 +51,7 @@ public class AtosStepDefinitions {
     }
     @Then("check user on the Xing WebSite")
     public void check_user_on_the_xing_web_site() {
-        Assert.assertTrue(BrowserUtils.linkcheck().contains("instagram"));
+        Assert.assertTrue(BrowserUtils.linkcheck().contains("xing"));
     }
 
 }
